@@ -8,6 +8,7 @@ const HomePage = () => {
     <motion.div
       initial={{ y: '-200vh' }}
       animate={{ y: '0%' }}
+      transition={{ duration: 1 }}
       className='h-full'
     >
       <div className='h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48'>
