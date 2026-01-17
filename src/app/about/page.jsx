@@ -5,6 +5,7 @@ import { useRef } from 'react';
 import { motion, useScroll } from 'framer-motion';
 
 import { skills } from '@/index';
+import Brain from '@/components/Brain';
 
 const AboutPage = () => {
   const containerRef = useRef();
@@ -25,7 +26,7 @@ const AboutPage = () => {
       animate={{ y: '0%' }}
       transition={{ duration: 1 }}
     >
-      <div className='h-full overflow-scroll lg:flex' ref={containerRef}>
+      <div ref={containerRef} className='h-full overflow-scroll lg:flex'>
         <div className='p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2'>
           <div className='flex flex-col gap-12 justify-center'>
             <Image
@@ -95,7 +96,7 @@ const AboutPage = () => {
             </motion.svg>
           </div>
 
-          <div className='flex flex-col gap-12 justify-center' ref={skillRef}>
+          <div ref={skillRef} className='flex flex-col gap-12 justify-center'>
             <motion.h1
               initial={{ x: '-300px' }}
               animate={isSkillRefInView ? { x: 0 } : {}}
@@ -151,8 +152,8 @@ const AboutPage = () => {
           </div>
 
           <div
-            className='flex flex-col gap-12 justify-center pb-48'
             ref={experienceRef}
+            className='flex flex-col gap-12 justify-center pb-48'
           >
             <motion.h1
               initial={{ x: '-300px' }}
@@ -171,7 +172,7 @@ const AboutPage = () => {
               {/* EXPERIENCE LIST ITEM */}
               <div className='flex justify-between h-48'>
                 {/* LEFT */}
-                <div className='w-1/3 '>
+                <div className='w-1/3'>
                   <div className='bg-white p-3 font-semibold rounded-b-lg rounded-s-lg capitalize'>
                     Senior javaScript engineer
                   </div>
@@ -200,13 +201,13 @@ const AboutPage = () => {
                 </div>
 
                 {/* RIGHT */}
-                <div className='w-1/3 '></div>
+                <div className='w-1/3'></div>
               </div>
 
               {/* EXPERIENCE LIST ITEM */}
               <div className='flex justify-between h-48'>
                 {/* LEFT */}
-                <div className='w-1/3 '></div>
+                <div className='w-1/3'></div>
 
                 {/* CENTER */}
                 <div className='w-1/6 flex justify-center'>
@@ -216,7 +217,7 @@ const AboutPage = () => {
                 </div>
 
                 {/* RIGHT */}
-                <div className='w-1/3 '>
+                <div className='w-1/3'>
                   <div className='bg-white p-3 font-semibold rounded-b-lg rounded-s-lg capitalize'>
                     Senior react developer
                   </div>
@@ -239,7 +240,7 @@ const AboutPage = () => {
               {/* EXPERIENCE LIST ITEM */}
               <div className='flex justify-between h-48'>
                 {/* LEFT */}
-                <div className='w-1/3 '>
+                <div className='w-1/3'>
                   <div className='bg-white p-3 font-semibold rounded-b-lg rounded-s-lg capitalize'>
                     Freelancer{' '}
                   </div>
@@ -262,7 +263,7 @@ const AboutPage = () => {
                 </div>
 
                 {/* RIGHT */}
-                <div className='w-1/3 '></div>
+                <div className='w-1/3'></div>
               </div>
             </motion.div>
           </div>
