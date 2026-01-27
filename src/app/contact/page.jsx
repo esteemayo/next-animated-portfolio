@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 
-import Alert from '@/components/Alert';
+import Alert from '@/app/contact/Alert';
 
 const ContactPage = () => {
   const form = useRef();
